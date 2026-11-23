@@ -126,7 +126,7 @@ Download the three companion archives from Zenodo (https://doi.org/10.5281/zenod
 | Archive | Content | Download | Unpacked | SHA-256 |
 |---|---|---|---|---|
 | `pinn-hab-B-i-forecasts-constants.tar.xz` | Saved forecasts, saved station constants, run settings and the summary tables of every run behind the paper (15,228 files) | 261 MB | 2.11 GB | `4d40e38c01ee0c4672b0307df8b36dfd3e109f79cba4d660c67155cfab007868` |
-| `pinn-hab-B-ii-model-files.tar.xz` | Model files of these runs (2,612 files) | 394 MB | 556 MB | `60d36dc0b38aecb1a7646d3135216e8b6043e02d1f163bdd013ebd574480452d` |
+| `pinn-hab-B-ii-model-files.tar.xz` | Model files of these runs (2,612 files) | 394 MB | 556 MB | `60d36dc0b38aecb1a7646d3135216e8b6043e02d1f163bdd013ebd574480852d` |
 | `pinn-hab-B-iii-design-steps-S15.tar.xz` | Runs of the design steps behind Table S15 (1,989 files) | 78 MB | 509 MB | `cd4982860d04f7adf26c06a01b637074a45d1d18ba2458648b51169067e0a10d` |
 
 Extract all three archives at the package root, create the Python environment and run `./reproduce_B.sh`. Archive `i` includes identical copies of the 28 summary files already present under `results/`.
