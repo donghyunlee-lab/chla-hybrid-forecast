@@ -19,7 +19,7 @@ You can verify the paper at three reproducibility levels:
 | C | Trains the models again | This package, one NVIDIA GPU | About 29 hours on one RTX 4090 |
 
 Repository: https://github.com/donghyunlee-lab/chla-hybrid-forecast
-Archive record (package and large archives): TO BE ADDED: DOI
+Archive record (package and large archives): https://doi.org/10.5281/zenodo.24460628
 
 ## Contents
 
@@ -121,7 +121,7 @@ Figure 1 reads official monitoring coordinates from `data/national/weis_auto_sta
 
 ## Level B: result tables from the saved forecasts and model files
 
-Download the three companion archives from Zenodo (TO BE ADDED: DOI) and verify their SHA-256 digests:
+Download the three companion archives from Zenodo (https://doi.org/10.5281/zenodo.24460628) and verify their SHA-256 digests:
 
 | Archive | Content | Download | Unpacked | SHA-256 |
 |---|---|---|---|---|
@@ -193,7 +193,7 @@ Source code carries the MIT license (`LICENSE`), while compiled datasets and res
 Please cite the paper (`CITATION.cff`):
 
 Donghyun Lee. Hard constraints make an accurate hybrid chlorophyll-a forecast interpretable: a process equation with an xLSTM
-correction. Submitted to *Ecological Informatics*. Package DOI: TO BE ADDED: DOI.
+correction. Submitted to *Ecological Informatics*. Package DOI: https://doi.org/10.5281/zenodo.24460628.
 
 ## Contact
 

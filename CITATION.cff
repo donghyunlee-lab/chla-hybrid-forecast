@@ -24,8 +24,7 @@ keywords:
   - hard constraints
   - interpretability
 repository-code: "https://github.com/donghyunlee-lab/chla-hybrid-forecast"
-# TO BE ADDED: DOI of the archived package. Uncomment and fill in:
-# doi: "10.5281/zenodo.TO-BE-ADDED"
+doi: "10.5281/zenodo.24460628"
 version: "1.0.0"
 date-released: "2026-11-23"
 preferred-citation:
