@@ -1,0 +1,122 @@
+{
+ "stations": {
+  "공주": {
+   "first_day": "2012-07-01",
+   "days": 4567,
+   "workbook_days": 4567,
+   "measured_share_2020_2024": {
+    "수온 (℃)": 0.784,
+    "클로로필-a (mg/㎥)": 0.766,
+    "총질소 (mg/L)": 0.726,
+    "총인 (mg/L)": 0.698,
+    "탁도 (NTU)": 0.74
+   },
+   "never_measured": []
+  },
+  "대청호": {
+   "first_day": "2012-07-01",
+   "days": 4567,
+   "workbook_days": 4567,
+   "measured_share_2020_2024": {
+    "수온 (℃)": 0.951,
+    "클로로필-a (mg/㎥)": 0.881,
+    "총질소 (mg/L)": 0.906,
+    "총인 (mg/L)": 0.852,
+    "탁도 (NTU)": 0.0
+   },
+   "never_measured": [
+    "탁도 (NTU)",
+    "염화메틸렌 (μg/L)",
+    "1.1.1-트리클로로에테인 (μg/L)",
+    "사염화탄소 (μg/L)",
+    "트리클로로에틸렌 (μg/L)",
+    "테트라클로로에틸렌 (μg/L)",
+    "벤젠 (μg/L)",
+    "톨루엔 (μg/L)",
+    "에틸벤젠 (μg/L)",
+    "m,p-자일렌 (μg/L)",
+    "o-자일렌 (μg/L)",
+    "[ECD]염화메틸렌 (μg/L)",
+    "[ECD]1.1.1-트리클로로에테인 (μg/L)",
+    "[ECD]사염화탄소 (μg/L)",
+    "[ECD]트리클로로에틸렌 (μg/L)",
+    "[ECD]테트라클로로에틸렌 (μg/L)"
+   ]
+  },
+  "갑천": {
+   "first_day": "2012-07-01",
+   "days": 4567,
+   "workbook_days": 4567,
+   "measured_share_2020_2024": {
+    "수온 (℃)": 0.889,
+    "클로로필-a (mg/㎥)": 0.816,
+    "총질소 (mg/L)": 0.0,
+    "총인 (mg/L)": 0.0,
+    "탁도 (NTU)": 0.851
+   },
+   "never_measured": [
+    "총질소 (mg/L)",
+    "총인 (mg/L)"
+   ]
+  },
+  "부여": {
+   "first_day": "2012-07-01",
+   "days": 4567,
+   "workbook_days": 4567,
+   "measured_share_2020_2024": {
+    "수온 (℃)": 0.822,
+    "클로로필-a (mg/㎥)": 0.781,
+    "총질소 (mg/L)": 0.733,
+    "총인 (mg/L)": 0.69,
+    "탁도 (NTU)": 0.0
+   },
+   "never_measured": [
+    "탁도 (NTU)"
+   ]
+  },
+  "용담호": {
+   "first_day": "2012-07-01",
+   "days": 4567,
+   "workbook_days": 4567,
+   "measured_share_2020_2024": {
+    "수온 (℃)": 0.949,
+    "클로로필-a (mg/㎥)": 0.902,
+    "총질소 (mg/L)": 0.901,
+    "총인 (mg/L)": 0.52,
+    "탁도 (NTU)": 0.0
+   },
+   "never_measured": [
+    "탁도 (NTU)",
+    "염화메틸렌 (μg/L)",
+    "1.1.1-트리클로로에테인 (μg/L)",
+    "사염화탄소 (μg/L)",
+    "트리클로로에틸렌 (μg/L)",
+    "테트라클로로에틸렌 (μg/L)",
+    "벤젠 (μg/L)",
+    "톨루엔 (μg/L)",
+    "에틸벤젠 (μg/L)",
+    "m,p-자일렌 (μg/L)",
+    "o-자일렌 (μg/L)",
+    "[ECD]염화메틸렌 (μg/L)",
+    "[ECD]1.1.1-트리클로로에테인 (μg/L)",
+    "[ECD]사염화탄소 (μg/L)",
+    "[ECD]트리클로로에틸렌 (μg/L)",
+    "[ECD]테트라클로로에틸렌 (μg/L)"
+   ]
+  }
+ },
+ "generated_at": "2026-10-11T18:38:31",
+ "source": "water_data.zip",
+ "rows": 22835,
+ "rules": [
+  "1. Measured values are kept as reported in the WEIS daily workbooks (duplicate days averaged).",
+  "  2. \"ND\" (not detected) is 0 for the volatile organic compounds, as in the earlier dataset.",
+  "     For other variables \"ND\" is treated as a missing value.",
+  "  3. A missing day is filled with the last measured value of the same station (forward fill, no limit).",
+  "     No smoothing, no interpolation between past and future values, no values from other stations or days.",
+  "  4. Before the first measured value of a station, and for variables a station does not measure, the value is the",
+  "     median of the training period (2020-01-01 to 2022-12-31): the station's own median if it has one,",
+  "     otherwise the median of the stations that measure the variable. This constant carries no test-year information."
+ ],
+ "nan_cells": 0
+}

@@ -1,0 +1,40 @@
+% Comparison models (text only, not generated from results)
+\begin{table}[tbp]
+\centering
+\caption{Benchmark models evaluated at 1, 3, 7 and 14 days. Source basins denote the three river basins excluding the target station's basin. All learned models were trained across five random seeds; starred models ($^{*}$) were evaluated with both the 17-channel and 32-channel input sets.}
+\label{tab:models}
+\linespread{1}\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.95}
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.80\textheight}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.42\textwidth}>{\raggedright\arraybackslash}p{0.29\textwidth}@{}}
+\toprule
+Model & Model formulation & Data used for fitting \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{This study}} \\
+Hybrid & Gompertz-type process equation with a bounded xLSTM correction (Section~\ref{sec:model}) & Network: source basins. Five station constants and basin gate: target-basin records \\
+Process model & Standalone Gompertz-type process equation ($\varepsilon_{s,t} = 0$) & Five station constants: target-basin records \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Reference forecasts}} \\
+Persistence & Latest measured concentration carried forward & None \\
+Climatology & Annual cycle fitted with two Fourier harmonic pairs & Target-station record \\
+Damped anomaly & Climatology plus latest anomaly damped by lag autocorrelation & Target-station record \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Statistical models}} \\
+ARIMA & Autoregressive integrated moving-average model selected by AIC & Target-station record \\
+Harmonic ARIMA & ARIMA with two annual Fourier harmonic pairs & Target-station record \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Machine learning models}} \\
+XGBoost$^{*}$ & Gradient-boosted trees predicting $\Delta\ln(1+C)$ per horizon & Target-station record \\
+XGBoost zero-shot$^{*}$ & Cross-basin gradient-boosted trees applied without target-station data & Source basins \\
+xLSTM zero-shot$^{*}$ & Direct xLSTM forecaster applied without target-station fine-tuning & Source basins \\
+xLSTM fine-tuned$^{*}$ & Source-basin xLSTM with all weights fine-tuned on the target station & Source basins, then target-station record \\
+Loss-term PINN zero-shot$^{*}$ & xLSTM trained with the soft Monod physics loss of Eq.~\eqref{eq:kinetics} & Source basins \\
+Loss-term PINN fine-tuned$^{*}$ & Source-basin loss-term PINN fine-tuned on the target station & Source basins, then target-station record \\
+Joint network & Target-basin xLSTM trained from scratch with 17 channels, univariate Chl-a or 32 channels & Target-basin records \\
+\midrule
+Mean of six$^{*}$ & Equal-weight mean of damped anomaly, harmonic ARIMA, both XGBoost models, fine-tuned xLSTM and process model & Constituent model records \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

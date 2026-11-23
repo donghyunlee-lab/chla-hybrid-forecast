@@ -1,0 +1,22 @@
+% Constants and bounds of the hybrid model (text only, not generated from results; ranges from scripts/xpinn/core2.py RANGE and EPS_MAX)
+\begin{table}[tbp]
+\centering
+\caption{Bounded station constants and daily neural correction of the hybrid model. Five constants are fitted per target station (alongside one scalar basin gate $g$), and $\varepsilon_{s,t}$ is produced daily by the frozen cross-basin xLSTM.}
+\label{tab:constants}
+\footnotesize\linespread{1}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.47\textwidth}lll@{}}
+\toprule
+Symbol & Meaning & Unit & Range & Equation \\
+\midrule
+$\kappa_s$ & Daily return rate constant of $\ln C$ at 20~$^\circ$C & d$^{-1}$ & 0--0.5 & \eqref{eq:step}, \eqref{eq:rate} \\
+$\theta_s$ & Arrhenius temperature coefficient of the return rate & -- & 0.9--1.1 & \eqref{eq:rate} \\
+$\omega_s$ & Seasonal-cycle weight in the station level & -- & 0--1 & \eqref{eq:level} \\
+$\beta_s$ & Rainfall flushing loss coefficient in $\ln C$ & mm$^{-1}$ & 0--0.05 & \eqref{eq:step} \\
+$\alpha_s$ & Initial-state weight on the latest Chl-a observation & -- & 0--1 & \eqref{eq:start} \\
+\midrule
+$\varepsilon_{s,t}$ & Bounded daily neural correction in $\ln C$ & d$^{-1}$ & $-0.1$ to $0.1$ & \eqref{eq:step}, \eqref{eq:eps} \\
+\bottomrule
+\end{tabular}
+\end{table}

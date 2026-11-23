@@ -1,0 +1,8 @@
+venv-a/
+.venv/
+output/
+src/gis/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.tar.xz

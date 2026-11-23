@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-11-14T18:39:41",
+  "source": "an institutional copy of the daily values of the WEIS automatic monitoring network",
+  "silver_dir": "folder data/silver/observations/automatic/daily of that copy (not distributed)",
+  "date_range": [
+    "2020-12-01",
+    "2025-12-31"
+  ],
+  "stations": 37,
+  "variables": [
+    "water_temperature",
+    "ph",
+    "electrical_conductivity",
+    "dissolved_oxygen",
+    "turbidity",
+    "total_organic_carbon",
+    "chlorophyll_a",
+    "total_nitrogen",
+    "total_phosphorus"
+  ],
+  "rows": 68709,
+  "numeric_cells": 479694,
+  "duplicate_station_date_variable_cells_averaged": 394020,
+  "rules": [
+    "numeric observations only",
+    "duplicates within station-date-variable averaged",
+    "no filling, interpolation or smoothing",
+    "rows assigned by station ID; the 2025 IDs of the eight Yeongsan-Seomjin stations are added (alias_2025)"
+  ],
+  "alias_2025": {
+    "S04001": "AUT-dbd1abfb269d4d",
+    "S04002": "AUT-5c258e9cd9395e",
+    "S04004": "AUT-54db41b4ca50a2",
+    "S04005": "AUT-1885c8d145ea84",
+    "S04007": "AUT-303799d7e6824e",
+    "S04008": "AUT-a30c6ff18489e0",
+    "S04009": "AUT-9bd8fc04b61947",
+    "S04012": "AUT-5a4669e6f5847e"
+  },
+  "first_build": {
+    "daily_observed_sha256": "8c7b76f6df0997e2ad3e7c46cba83d2ee9cf41483d14c62f3db5d91bd64852a0",
+    "cells_outside_the_added_rows_identical": true,
+    "cells_in_the_added_rows_first_build": 0
+  },
+  "added_2025_measured_days": {
+    "S04001": {
+      "water_temperature": 299,
+      "ph": 299,
+      "electrical_conductivity": 299,
+      "dissolved_oxygen": 299,
+      "turbidity": 299,
+      "total_organic_carbon": 280,
+      "chlorophyll_a": 299,
+      "total_nitrogen": 291,
+      "total_phosphorus": 294
+    },
+    "S04002": {
+      "water_temperature": 325,
+      "ph": 325,
+      "electrical_conductivity": 325,
+      "dissolved_oxygen": 317,
+      "turbidity": 322,
+      "total_organic_carbon": 305,
+      "chlorophyll_a": 328,
+      "total_nitrogen": 310,
+      "total_phosphorus": 311
+    },
+    "S04004": {
+      "water_temperature": 354,
+      "ph": 354,
+      "electrical_conductivity": 347,
+      "dissolved_oxygen": 321,
+      "turbidity": 0,
+      "total_organic_carbon": 159,
+      "chlorophyll_a": 349,
+      "total_nitrogen": 311,
+      "total_phosphorus": 282
+    },
+    "S04005": {
+      "water_temperature": 336,
+      "ph": 336,
+      "electrical_conductivity": 336,
+      "dissolved_oxygen": 336,
+      "turbidity": 0,
+      "total_organic_carbon": 315,
+      "chlorophyll_a": 337,
+      "total_nitrogen": 318,
+      "total_phosphorus": 321
+    },
+    "S04007": {
+      "water_temperature": 358,
+      "ph": 356,
+      "electrical_conductivity": 360,
+      "dissolved_oxygen": 353,
+      "turbidity": 348,
+      "total_organic_carbon": 315,
+      "chlorophyll_a": 360,
+      "total_nitrogen": 302,
+      "total_phosphorus": 278
+    },
+    "S04008": {
+      "water_temperature": 355,
+      "ph": 353,
+      "electrical_conductivity": 355,
+      "dissolved_oxygen": 350,
+      "turbidity": 354,
+      "total_organic_carbon": 354,
+      "chlorophyll_a": 348,
+      "total_nitrogen": 341,
+      "total_phosphorus": 320
+    },
+    "S04009": {
+      "water_temperature": 333,
+      "ph": 329,
+      "electrical_conductivity": 332,
+      "dissolved_oxygen": 333,
+      "turbidity": 0,
+      "total_organic_carbon": 321,
+      "chlorophyll_a": 334,
+      "total_nitrogen": 327,
+      "total_phosphorus": 323
+    },
+    "S04012": {
+      "water_temperature": 285,
+      "ph": 285,
+      "electrical_conductivity": 281,
+      "dissolved_oxygen": 280,
+      "turbidity": 0,
+      "total_organic_carbon": 264,
+      "chlorophyll_a": 285,
+      "total_nitrogen": 279,
+      "total_phosphorus": 270
+    }
+  },
+  "sha256": {
+    "daily_observed.csv": "5ed382caf3a60db5f21c42d41bc7ef357c39733eeeb06ee505c1cc22f6324efd",
+    "era5_daily.csv": "2600de2e9014b8623aec6864ff674b226f714b09781e1db34b8a39b9aef80dbd",
+    "stations.csv": "b517560a06f747e5182ff097e782a7663cbff1473f78c5cdec1eec63fa17ec3e",
+    "weis_auto_stations.csv": "5fa34fa30f55fe697822ee70cd74921c5322eafc86928ccac0dc047f66b7ca76",
+    "record_eligibility.csv": "3f2bf884ba09059755b719b1b611377fedc39979cf573d0be30af953b45e4146"
+  }
+}

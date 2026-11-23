@@ -1,0 +1,12 @@
+System on which the models were trained and the Level B check was run (recorded 2026-11-16)
+
+Operating system   Ubuntu 24.04.4 LTS (Noble Numbat), Linux kernel 6.17.0-35-generic, x86_64
+CPU                64 logical cores
+Memory             251 GiB
+GPU                1 x NVIDIA GeForce RTX 4090, 24564 MiB
+NVIDIA driver      570.211.01
+Python             3.12.13 (CPython, standalone build installed with uv 0.11.16, virtual environment)
+PyTorch            2.11.0+cu128
+CUDA (PyTorch)     12.8 (cuda-toolkit 12.8.1 wheels)
+cuDNN              9.19.0 (nvidia-cudnn-cu12 9.19.0.56; torch reports 91900)
+Packages           requirements-train.txt (exact versions of every installed distribution)

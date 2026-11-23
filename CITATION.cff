@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper given under preferred-citation."
+type: software
+title: "chla-hybrid-forecast: code, data and results for a hybrid chlorophyll-a forecast with hard constraints"
+abstract: >-
+  Code, daily monitoring data and summary tables for the paper "Hard constraints make an accurate hybrid chlorophyll-a
+  forecast interpretable: a process equation with an xLSTM correction". Included scripts rebuild every generated table
+  and figure of the paper, recompute the result tables from saved forecasts and model files, and retrain all models from
+  scratch.
+authors:
+  - family-names: Lee
+    given-names: Donghyun
+    email: donghyun.lee@hufs.ac.kr
+    orcid: "https://orcid.org/0000-0002-1461-2556"
+    affiliation: "Division of Social Science & AI, Hankuk University of Foreign Studies, 107 Imun-ro, Dongdaemun-gu, Seoul 02450, Republic of Korea, and R&D Center, AI Korea inc., Incheon, Republic of Korea"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - harmful algal blooms
+  - chlorophyll-a forecasting
+  - hybrid modeling
+  - physics-informed machine learning
+  - hard constraints
+  - interpretability
+repository-code: "https://github.com/donghyunlee-lab/chla-hybrid-forecast"
+# TO BE ADDED: DOI of the archived package. Uncomment and fill in:
+# doi: "10.5281/zenodo.TO-BE-ADDED"
+version: "1.0.0"
+date-released: "2026-11-23"
+preferred-citation:
+  type: article
+  title: "Hard constraints make an accurate hybrid chlorophyll-a forecast interpretable: a process equation with an xLSTM correction"
+  authors:
+    - family-names: Lee
+      given-names: Donghyun
+      email: donghyun.lee@hufs.ac.kr
+      orcid: "https://orcid.org/0000-0002-1461-2556"
+      affiliation: "Division of Social Science & AI, Hankuk University of Foreign Studies, 107 Imun-ro, Dongdaemun-gu, Seoul 02450, Republic of Korea, and R&D Center, AI Korea inc., Incheon, Republic of Korea"
+  journal: "Ecological Informatics"
+  status: submitted
+  notes: "Under review at Ecological Informatics."

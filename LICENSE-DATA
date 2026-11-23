@@ -1,0 +1,32 @@
+# Data and result licenses
+
+Copyright (c) 2026 Donghyun Lee
+
+Donghyun Lee releases the compiled data tables, summary outputs and reference files in this package under the Creative
+Commons Attribution 4.0 International license (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/). Readers find
+the full legal code at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+Four groups of files fall under CC BY 4.0:
+- compiled daily water-quality tables, station metadata and weekly algae-alert records in `data/`
+- summary result CSVs in `results/` and `earlier_design/`
+- reference LaTeX tables and PDF/PNG figures in `manuscript/expected/`
+- saved test forecasts, fitted station constants, run settings and model checkpoints in the three Zenodo archives
+
+When reusing or sharing any of these files, please cite both the journal article and this package (`CITATION.cff`).
+All Python and shell source code in `src/`, `scripts/`, `earlier_design/` and the root scripts carries the MIT license
+in `LICENSE`.
+
+## Third-party data terms
+
+Files in `data/` build upon three public monitoring and weather services whose provider terms apply alongside CC BY 4.0.
+Downstream users must keep the source credits below.
+
+| Provider | Package files | Required credit and provider terms |
+|---|---|---|
+| Water Environment Information System (WEIS), National Institute of Environmental Research, Republic of Korea (https://water.nier.go.kr) | `data/national/`, `data/national_v2/` (daily water quality, station codes and coordinates), `data/clean/geum_daily_observed.csv`, `data/clean/observed_rates.csv`, `data/clean/algae_alert_weekly.csv` | Credit: Source data from the Water Environment Information System (https://water.nier.go.kr), National Institute of Environmental Research, Republic of Korea (2025-2026). Reuse follows the public data terms of WEIS. |
+| Copernicus Climate Change Service (C3S) ERA5 reanalysis (Hersbach et al., 2020, *Q. J. R. Meteorol. Soc.*, 146, 1999-2049) | `data/national/era5_daily.csv`, `data/national_v2/era5_daily.csv`, `data/clean/era5_daily.csv` | Credit: Contains modified Copernicus Climate Change Service information 2025-2026; neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Reuse follows the C3S ERA5 license. |
+| Open-Meteo Historical Weather API (https://open-meteo.com, `archive-api.open-meteo.com`, model `era5`) | Daily station weather series listed above | Credit: Weather data by Open-Meteo.com (https://open-meteo.com), aggregated into daily station series. Open-Meteo licenses historical weather records for non-commercial research under CC BY 4.0 (https://open-meteo.com/en/terms). |
+
+This package omits the external GIS shapefiles for Figure 1 (HydroBASINS level-6 polygons from https://www.hydrosheds.org
+and Korean river and provincial boundaries from https://www.data.go.kr). Users obtain those layers directly from their
+providers under each provider's terms.

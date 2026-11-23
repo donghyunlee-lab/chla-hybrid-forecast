@@ -1,0 +1,16 @@
+# Level A (reproduce_A.sh): packages imported by the table and figure scripts and their dependencies.
+# Python 3.12.13. pandas 3.0.6 is the version that wrote the manuscript tables (3.1.0 parses some CSV floats differently and changes the last digit of three cells of Tables S1 and S3).
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.67.0
+kiwisolver==1.5.1
+packaging==26.3
+pillow==13.0.0
+pyparsing==3.3.3
+python-dateutil==3.0.0
+six==1.17.0
+tzdata==2026.5
